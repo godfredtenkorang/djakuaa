@@ -1,0 +1,10 @@
+.env
+
+venv
+
+VENV
+
+DB_STORE
+
+__pycache__/
+__pycache__
