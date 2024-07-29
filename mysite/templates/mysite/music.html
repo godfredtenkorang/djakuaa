@@ -1,0 +1,71 @@
+{% extends 'mysite/base.html' %} {% load static %} {% block content %}
+
+<div class="banner-container padding">
+  <div class="slide">
+    <img src="{% static 'mysite/img/latestRelease.jpg' %}" alt="Slide 1" />
+    <div class="test-on-banner">
+      <div class="text">
+        <h1>DISCOGRAPHY</h1>
+      <p>My Music</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="official-release-container">
+    
+    <a href="{% url 'latestRelease' %}" class="song-release element">
+      <img src="{% static 'mysite/img/latestRelease.jpg' %}" alt="Slide 1" />
+      <div class="song-tittle">
+        <h4>Yes cocoa ft Kuami Eugene</h4>
+        <p>Kuame Eugene</p>
+      </div>
+    </a>
+    <a href="{% url 'latestRelease' %}" class="song-release element">
+      <img src="{% static 'mysite/img/latestRelease2.jpg' %}" alt="Slide 1" />
+      <div class="song-tittle">
+        <h4>Yes cocoa ft Kuami Eugene</h4>
+        <p>Kuame Eugene</p>
+      </div>
+    </a>
+    <a href="{% url 'latestRelease' %}" class="song-release element">
+      <img src="{% static 'mysite/img/latestRelease3.jpg' %}" alt="Slide 1" />
+      <div class="song-tittle">
+        <h4>Yes cocoa ft Kuami Eugene</h4>
+        <p>Kuame Eugene</p>
+      </div>
+    </a>
+    <a href="{% url 'latestRelease' %}" class="song-release element">
+      <img src="{% static 'mysite/img/latestRelease4.jpg' %}" alt="Slide 1" />
+      <div class="song-tittle">
+        <h4>Yes cocoa ft Kuami Eugene</h4>
+        <p>Kuame Eugene</p>
+      </div>
+    </a>
+    <a href="{% url 'latestRelease' %}" class="song-release element">
+      <img src="{% static 'mysite/img/latestRelease5.jpg' %}" alt="Slide 1" />
+      <div class="song-tittle">
+        <h4>Yes cocoa ft Kuami Eugene</h4>
+        <p>Kuame Eugene</p>
+      </div>
+    </a>
+    <a href="{% url 'latestRelease' %}" class="song-release element">
+      <img src="{% static 'mysite/img/latestRelease6.jpg' %}" alt="Slide 1" />
+      <div class="song-tittle">
+        <h4>Yes cocoa ft Kuami Eugene</h4>
+        <p>Kuame Eugene</p>
+      </div>
+    </a>
+    <a href="{% url 'latestRelease' %}" class="song-release element">
+      <img src="{% static 'mysite/img/latestRelease7.jpg' %}" alt="Slide 1" />
+      <div class="song-tittle">
+        <h4>Yes cocoa ft Kuami Eugene</h4>
+        <p>Kuame Eugene</p>
+      </div>
+    </a>
+  </div>
+
+  {% endblock %}
+</div>

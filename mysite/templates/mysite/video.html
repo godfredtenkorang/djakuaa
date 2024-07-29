@@ -1,0 +1,31 @@
+{% extends 'mysite/base.html' %} {% load static %} {% block content %}
+
+<div class="banner-container padding">
+    <div class="slide">
+      <img src="{% static 'mysite/img/latestRelease.jpg' %}" alt="Slide 1" />
+      <div class="test-on-banner">
+        <h1 class="text"> YES COCOA FT KUAMI EUGENE
+        </h1>
+        <div class="release-btn">
+            <a href="{% url 'videoGallery' %}" class="btn">Official Video</a>
+            <a href="{% url 'singleRelease' %}" class="btn">Single</a>
+        </div>      </div>
+    </div>
+  </div>
+
+
+
+  <div class="watch-video">
+    <iframe  src="https://www.youtube.com/embed/djQ3Reu9AYo?si=dsLx3Dp4Tg1ZcwUf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    
+    <div class="share">
+      <p>SHARE:</p>
+      <a href=""> <i class="fa-brands fa-twitter"></i> </a>
+      <a href=""> <i class="fa-brands fa-facebook"></i> </a>
+      <a href=""> <i class="fa-brands fa-pinterest"></i> </a>
+     </div>
+  </div>
+
+
+{% endblock %}

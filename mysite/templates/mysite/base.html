@@ -1,13 +1,82 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'mysite/style.css' %}">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'mysite/style.css' %}" />
     <title>Dj Akuaa</title>
+    <!-- External CSS files, meta tags, and other head elements can go here -->
+    <link rel="stylesheet" href="{% static 'foundation/style.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+    <header>
+        <nav>
+            <div class="socials">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="logo">
+                <a href="{% url 'index' %}">
+                    <img src="{% static 'mysite/img/logo.png' %}" alt="Slide 1" />
+
+
+                </a>
+            </div>
+
+            <div class="menu-icon">
+                <div class="container" onclick="this.classList.toggle('active')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="80" viewBox="0 0 200 200">
+                        <g stroke-width="6.5" stroke-linecap="round">
+                            <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                            <path
+                                d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                                fill="none" stroke="#fff" />
+                            <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                            <path
+                                d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                                fill="none" stroke="#fff" />
+                            <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                            <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="nav-links">
+                <ul class="">
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'aboutMe' %}">About</a></li>
+                    <li><a href="{% url 'music' %}"> Music</a></li>
+                    <li><a href="{% url 'gallery' %}"> Gallery</a></li>
+                    <li><a href="{% url 'videoGallery' %}">Videos</a></li>
+                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li><a href="{% url 'book' %}">Book Me</a></li>
+                   
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+
     {% block content %}{% endblock %}
+    <button class="scrollToTopBtn" title="click to scroll to top"><i class="fa fa-arrow-up"></i></button>
+
+    <footer>
+        <a href="{% url 'music' %}">
+            © 2021 DJ Akuaa. All Rights Reserved. Designed by GB WEB SERVICE</a>
+    </footer>
+    <script src="{% static 'mysite/app.js' %}" defer></script>
+    <script src="{% static 'mysite/main.js' %}" defer></script>
+
+ 
 </body>
+
 </html>

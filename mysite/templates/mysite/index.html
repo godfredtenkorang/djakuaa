@@ -1,8 +1,129 @@
-{% extends 'mysite/base.html' %}
-{% load static %}
+{% extends 'mysite/base.html' %} {% load static %} {% block content %}
 
-{% block content %}
+<!-- banner -->
+<div class="banner-container padding">
+  <div class="banner">
+    <img src="{% static 'mysite/img/banner.jpg' %}" alt="Slide 1" />
+    <div class="banner-text">
+      <h1>DJ AKUAA DA <span> SPINSTRESS</span></h1>
+    </div>
+  </div>
+</div>
 
-<h1>This is home page</h1>
+<!-- latest release -->
+<div class="latest-release-container">
+  <div class="heading element">
+    <h2>My <span>Latest Release</span></h2>
+    <p>FT KUAMI EUGENE - YES COCOA</p>
+  </div>
+
+  <div class="latest-release element">
+    <div class="latest-release-flyer">
+      <a href="{% url 'latestRelease' %}"> 
+        <img src="{% static 'mysite/img/latestRelease.jpg' %}" alt="Slide 1" />
+      </a>
+    </div>
+    <div class="latest-release-youtube-link">
+      <p>
+        Talented DJ Akuaa links up with multiple award-winning Ghanaian singer,
+        Kuami Eugene to outdoor this masterpiece track “Yes Cocoa” which owes
+        production credit to Apya.
+      </p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/djQ3Reu9AYo?si=ixzmKLqfEaBDzVYj"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+
+      <div class="digital-platforms">
+        <div class="platform">
+          <a href="" class="btn">Listen on Apple Music</a>
+        </div>
+
+        <div class="platform">
+          <a href="" class="btn">Buy from itunes</a>
+        </div>
+
+        <div class="platform">
+          <a href="" class="btn">listen on audiomack</a>
+        </div>
+
+        <div class="platform">
+          <a href="" class="btn">Listen on spotify</a>
+        </div>
+
+        <div class="platform">
+          <a href="" class="btn">Listen on deezer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- my gallery -->
+ <div class="my-gallery-main-container padd">
+    <div class="heading element">
+        <h2>My <span>Photo Gallery </span>
+        </h2>
+    </div>
+
+    <div class="gallery-container element">
+        <div class="small-imgs">
+            <img src="{% static 'mysite/img/photo1.jpg' %}" alt="Slide 1" />
+            <img src="{% static 'mysite/img/photo2.jpg' %}" alt="Slide 1" />
+            <img src="{% static 'mysite/img/photo3.jpg' %}" alt="Slide 1" />
+            <img src="{% static 'mysite/img/photo4.jpg' %}" alt="Slide 1" />
+            <img src="{% static 'mysite/img/photo5.jpg' %}" alt="Slide 1" />
+            <img src="{% static 'mysite/img/photo6.jpg' %}" alt="Slide 1" />
+
+        </div>
+        <div class="big-imgs">
+            <img src="{% static 'mysite/img/photo7.jpeg' %}" alt="Slide 1" />
+            <img src="{% static 'mysite/img/photo8.jpg' %}" alt="Slide 1" />
+            <img src="{% static 'mysite/img/photo9.jpg' %}" alt="Slide 1" />
+
+        </div>
+
+        <div class="more-images">
+          <a href="{% url 'gallery' %}"> more images</a>
+        </div>
+    </div>
+ </div>
+
+
+ <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+        <div class="modal-image-counter"></div>
+        <img class="modal-img" src="">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ 
+</script>
 
 {% endblock %}
