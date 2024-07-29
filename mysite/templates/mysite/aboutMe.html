@@ -1,0 +1,117 @@
+{% extends 'mysite/base.html' %} {% load static %} {% block content %}
+
+<div class="banner-container padding">
+    <div class="slide">
+      <div class="black">
+       <div class="text">
+        <h1 > DJ AKUAA
+
+        </h1>
+        <p><span> DJ AKUAA DA SPINSTRESS</span></p>
+
+       </div>
+    </div>
+  </div>
+
+
+  <div class="about-us-main-container">
+
+    <div class="about-heading">
+        <h4>Official Website</h4>
+        <div class="social-media-2">
+            <p>Follow :</p>
+
+            <div class="media">
+                <a href=""><i class="fa-brands fa-facebook"></i>
+                    <a href=""><i class="fa-brands fa-facebook"></i>
+                    <a href=""><i class="fa-brands fa-facebook"></i>
+                    <a href=""><i class="fa-brands fa-facebook"></i>
+                    </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about-us-container">
+        <div class="about-slide">
+            <img class="slides" src="{% static 'mysite/img/latestRelease.jpg' %}" alt="Slide 1" />
+            <img class="slides" src="{% static 'mysite/img/photo1.jpg' %}" alt="Slide 2" />
+            <img class="slides" src="{% static 'mysite/img/latestRelease.jpg' %}" alt="Slide 3" />
+            <img class="slides" src="{% static 'mysite/img/latestRelease.jpg' %}" alt="Slide 4" />
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+        
+      
+        
+        <div class="about-detail">
+            <p> Akua Agyeiwa Kumi who goes by the moniker of Dj Akuaa is a multi-talented DJ and performing artist who is at the fulcrum of an evolving afro-pop and Afrobeats scene. Also known as DaSpinstress, Dj Akuaa is a very different and uniquely wired musician who isn’t afraid to break the rules and push the boundaries of our perception with her deeply layered melodies and well-crafted production. Born in Tema, Ghana she moved to the United States at the tender age of 5 and grew up in the DMV Area. Dj Akuaa has a drive, a focus, and a tenacity that will lead her to become a relentless and unstoppable force in the independent pop circuit. Dj Akuaa is making music that is driven by a desire to motivate, inspire, and tell her story her way
+
+            </p>
+
+
+            <p> Dj Akuaa began her journey as a DJ in the DC-Metro Area in 2010 and has since played countless electrifying sets in over 14 cities across the US and has enthralled audiences in multiple countries. She rose to prominence by playing weddings, special events, and nightclubs most notably South by Southwest in Austin Texas. DaSpinstress then diversified her repertoire and debuted as a recording artist in 2016.
+
+            </p>
+
+
+            <p> Music is the vehicle by which she expresses herself authentically. She creates mixes that draw from her experiences and she uses her musical acumen to amalgamate sounds that are diverse and culturally grounded. Through her music, she connects with audiences across the spectrum. Dj Akuaa combines various unique and experimental sounds with her intricate wording and often dabbles in multiple genres resulting in a variety of fusions that are still firmly stitched together by emotive undertones. Dj Akuaa cites icons across the spectrum such as Lil Wayne, Drake, Sarkodie, Okyaeme Kwame, Kanye West, and Bryan McKnight as pivotal influences in her music. She is also an avid admirer of sounds from different cultures and countries. This all culminates in Dj Akuaa producing an enjoyable, and easygoing musical experience that is authentic and grounded in reality. Her overarching ambition is to empower people through her gift and one day become the African Dj Khalid. She is driven by the desire to share emotion through music and to impact lives positively.
+
+            </p>
+
+            <p> DJ Akuaa’s work has garnered plaudits and recognition. In 2014, she was named Best Female DJ at DMV African Entertainment Awards. In 2017 she was named Best International Ghanaian DJ at the Ghana DJ Awards twice. She also had the opportunity to play ‘Sounds from Africa’ at the 2016 – 2018 South by Southwest in Austin, Texas, and she has been featured on SiriusXM’s “Sway in the Morning” and she was also featured as a creator for the Tidal Afro beats playlist.
+
+            </p>
+
+            <p> She has also graced the world’s most prominent stages having been a featured DJ and performer at the “Afrobeats to the World” concert at the PlayStation Theater in New York City, in front of a sold-out crowd with more than 2,000 people in attendance
+
+            </p>
+
+            <p> Dj Akuaa has multiple projects in her catalog most notably are her singles “Oh My”, “Sing for Me”, “The Feeling”, “Marry Me”, and “Yes Cocoa.”  Her sets have left many dance floors filled with fun and an electric atmosphere. Her music takes listeners on a journey through various emotions and brings them to a place where they can escape the world and be lost in the music and just have fun. Her upcoming projects will highlight her passion and love for authenticity and her expressive nature. She explores various themes by delving deeper into the emotions that encompass the human psyche. The talented enigma is here to reshape and leave an indelible mark in the industry
+
+            </p>
+        </div>
+    </div>
+  </div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slides");
+    let dots = document.getElementsByClassName("dot");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+function currentSlide(n) {
+    slideIndex = n;
+    showSlides();
+}
+
+
+
+</script>
+
+
+{% endblock %}

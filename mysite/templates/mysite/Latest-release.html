@@ -1,0 +1,93 @@
+{% extends 'mysite/base.html' %} {% load static %} {% block content %}
+
+<div class="banner-container padding">
+    <div class="slide">
+      <img src="{% static 'mysite/img/latestRelease.jpg' %}" alt="Slide 1" />
+      <div class="test-on-banner">
+        <h1 class="text"> YES COCOA FT KUAMI EUGENE
+        </h1>
+        <div class="release-btn">
+            <a href="{% url 'officialRelease' %}" class="btn">Official Release</a>
+            <a href="{% url 'singleRelease' %}" class="btn">Single</a>
+        </div>      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- latest release -->
+<div class="latest-release-container">
+  
+  
+    <div class="latest-release element">
+      <div class="latest-release-flyer release-flyer-2">
+        
+      
+          <img src="{% static 'mysite/img/latestRelease.jpg' %}" alt="Slide 1" />
+
+         <div class="music-detail">
+            <p> <i class="fa-solid fa-calendar-days"></i> 2021</p>
+            <p><i class="fa-solid fa-music"></i> Kuami Eugene</p>
+            <p>Producer: ApyaGH</p>
+         </div>
+
+
+
+          <div class="digital-platforms">
+            <div class="platform">
+              <a href="" class="btn">Listen on Apple Music</a>
+            </div>
+    
+            <div class="platform">
+              <a href="" class="btn">Buy from itunes</a>
+            </div>
+    
+            <div class="platform">
+              <a href="" class="btn">listen on audiomack</a>
+            </div>
+    
+            <div class="platform">
+              <a href="" class="btn">Listen on spotify</a>
+            </div>
+    
+            <div class="platform">
+              <a href="" class="btn">Listen on deezer</a>
+            </div>
+          </div>
+     
+      </div>
+      <div class="latest-release-youtube-link release-link-2">
+
+        <div class="sound-cloud">
+          <iframe  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/998692279&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          
+          <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djakuaa" title="DJAKUAA" target="_blank" style="color: #cccccc; text-decoration: none;">DJAKUAA</a> · <a href="https://soundcloud.com/djakuaa/marry-me" title="Dj Akuaa - Marry Me (Ft - Bisa K Dei - Prod - By - Apya)" target="_blank" style="color: #cccccc; text-decoration: none;">Dj Akuaa - Marry Me (Ft - Bisa K Dei - Prod - By - Apya)</a></div>
+        </div>
+
+       <div class="share">
+        <p>SHARE:</p>
+        <a href=""> <i class="fa-brands fa-twitter"></i> </a>
+        <a href=""> <i class="fa-brands fa-facebook"></i> </a>
+        <a href=""> <i class="fa-brands fa-pinterest"></i> </a>
+       </div>
+
+
+        <iframe class="youtube"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/djQ3Reu9AYo?si=ixzmKLqfEaBDzVYj"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+  
+    
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

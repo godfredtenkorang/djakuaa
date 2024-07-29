@@ -1,0 +1,31 @@
+{% extends 'mysite/base.html' %} {% load static %} {% block content %}
+
+<div class="banner-container padding">
+    <div class="slide">
+      <img src="{% static 'mysite/img/banner2.jpg' %}" alt="Slide 1" />
+      <div class="test-on-banner">
+        <h1 class="text"> Gallery</h1>
+       
+    </div>
+  </div>
+
+  <div class="gallery-main-container">
+    <div class="gallery ">
+        <a href="{% url 'galleryDetail' %}">
+            <h3>DJ AKUAA PHOTO SHOOT </h3>
+        <P>Photo shoots</P>
+        </a>
+    </div>
+    <div class="gallery animate">
+        <a href="{% url 'galleryDetail' %}">
+            <h3>DJ AKUAA PHOTO SHOOT (MIMOCITY) </h3>
+        <P>Photo shoots</P>
+        </a>
+    </div>
+  </div>
+
+
+
+
+
+{% endblock %}

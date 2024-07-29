@@ -1,0 +1,51 @@
+{% extends 'mysite/base.html' %} {% load static %} {% block content %}
+
+<div class="banner-container padding">
+    <div class="slide">
+      <img src="{% static 'mysite/img/photo17.jpeg' %}" alt="Slide 1" />
+      <div class="test-on-banner">
+        <h1 class="text"> PHOTO SHOOT (MIMOCITY)
+        </h1>
+        <div class="release-btn">
+            <a href="{% url 'gallery' %}"class="btn">Photo Shoot</a>
+
+        </div> 
+       
+    </div>
+  </div>
+
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+        <div class="modal-image-counter"></div>
+        <img class="modal-img" src="">
+    </div>
+</div>
+  <div class="gallery-container background-black">
+    
+    <div class="gallery-img element">
+        <img src="{% static 'mysite/img/photo10.jpeg' %}" alt="Slide 1" />
+        <img src="{% static 'mysite/img/photo11.jpeg' %}" alt="Slide 1" />
+        <img src="{% static 'mysite/img/photo12.jpeg' %}" alt="Slide 1" />
+        <img src="{% static 'mysite/img/photo13.jpeg' %}" alt="Slide 1" />
+        <img src="{% static 'mysite/img/photo14.jpeg' %}" alt="Slide 1" />
+        <img src="{% static 'mysite/img/photo15.jpeg' %}" alt="Slide 1" />
+        <img src="{% static 'mysite/img/photo16.jpeg' %}" alt="Slide 1" />
+        <img src="{% static 'mysite/img/photo17.jpeg' %}" alt="Slide 1" />
+        <img src="{% static 'mysite/img/photo17.jpeg' %}" alt="Slide 1" />
+        <img src="{% static 'mysite/img/photo17.jpeg' %}" alt="Slide 1" />
+       
+
+    </div>
+
+    
+</div>
+ 
+
+
+
+
+{% endblock %}

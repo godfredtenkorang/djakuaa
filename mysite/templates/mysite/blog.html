@@ -1,0 +1,65 @@
+{% extends 'mysite/base.html' %} {% load static %} {% block content %}
+
+
+
+<div class="banner-container padding">
+    <div class="slide">
+      <img src="{% static 'mysite/img/photo19.jpeg' %}" alt="Slide 1" />
+      <div class="test-on-banner">
+        <h1 class="text"> Blog
+        </h1>
+      
+    </div>
+  </div>
+
+
+  <div class="blog-main-container">
+    <div class="blog-container element">
+        <img src="{% static 'mysite/img/banner2.jpg' %}" alt="Slide 1" />
+        <div class="blog-content">
+            <h2 class="blog-heading">
+                Mastering the Decks: Essential Tips for Aspiring DJs in 2024
+            </h2>
+            <p> Discover the art of DJing with our comprehensive guide for...... </p>
+        </div>
+        <a href="{% url 'blogDetail'%}" class=" btn readmore">Read more</a>
+    </div>
+    <div class="blog-container element">
+        <img src="{% static 'mysite/img/banner2.jpg' %}" alt="Slide 1" />
+        <div class="blog-content">
+            <h2 class="blog-heading">
+                Mastering the Decks: Essential Tips for Aspiring DJs in 2024
+            </h2>
+            <p> Discover the art of DJing with our comprehensive guide for...... </p>
+        </div>
+        <a href="{% url 'blogDetail'%}" class=" btn readmore">Read more</a>
+    </div>
+    <div class="blog-container element">
+        <img src="{% static 'mysite/img/banner2.jpg' %}" alt="Slide 1" />
+        <div class="blog-content">
+            <h2 class="blog-heading">
+                Mastering the Decks: Essential Tips for Aspiring DJs in 2024
+            </h2>
+            <p> Discover the art of DJing with our comprehensive guide for...... </p>
+        </div>
+        <a href="{% url 'blogDetail'%}" class=" btn readmore">Read more</a>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

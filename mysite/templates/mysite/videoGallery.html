@@ -1,0 +1,99 @@
+{% extends 'mysite/base.html' %} {% load static %} {% block content %}
+
+<div class="banner-container padding">
+    <div class="slide">
+      <img src="{% static 'mysite/img/photo2.jpg' %}" alt="Slide 1" />
+      <div class="test-on-banner">
+        <h1 class="text"> VIDEOS</h1>
+    </div>
+  </div>
+
+
+  <div class="videos-main-container">
+   <a href="{% url 'video' %}" class="video element">
+    <div >
+        <img src="{% static 'mysite/img/latestRelease.jpg' %}" alt="Slide 1" />
+        <div class="player">
+            <i class="fa-solid fa-play"></i>
+        </div>
+
+        <div class="song-titles">
+            <h2>YES COCOA FT KUAMI EUGENE </h2>
+        </div>
+
+    </div>
+
+   </a>
+   <a href="{% url 'video' %}" class="video element">
+    <div >
+        <img src="{% static 'mysite/img/latestRelease4.jpg' %}" alt="Slide 1" />
+        <div class="player">
+            <i class="fa-solid fa-play"></i>
+        </div>
+
+        <div class="song-titles">
+            <h2>YES COCOA FT KUAMI EUGENE </h2>
+        </div>
+
+    </div>
+
+   </a>
+   <a href="{% url 'video' %}" class="video element">
+    <div >
+        <img src="{% static 'mysite/img/latestRelease2.jpg' %}" alt="Slide 1" />
+        <div class="player">
+            <i class="fa-solid fa-play"></i>
+        </div>
+
+        <div class="song-titles">
+            <h2>YES COCOA FT KUAMI EUGENE </h2>
+        </div>
+
+    </div>
+
+   </a>
+   <a href="{% url 'video' %}" class="video element">
+    <div >
+        <img src="{% static 'mysite/img/latestRelease3.jpg' %}" alt="Slide 1" />
+        <div class="player">
+            <i class="fa-solid fa-play"></i>
+        </div>
+
+        <div class="song-titles">
+            <h2>YES COCOA FT KUAMI EUGENE </h2>
+        </div>
+
+    </div>
+
+   </a>
+   <a href="{% url 'video' %}" class="video element">
+    <div >
+        <img src="{% static 'mysite/img/latestRelease4.jpg' %}" alt="Slide 1" />
+        <div class="player">
+            <i class="fa-solid fa-play"></i>
+        </div>
+
+        <div class="song-titles">
+            <h2>YES COCOA FT KUAMI EUGENE </h2>
+        </div>
+
+    </div>
+
+   </a>
+   <a href="{% url 'video' %}" class="video element">
+    <div >
+        <img src="{% static 'mysite/img/latestRelease5.jpg' %}" alt="Slide 1" />
+        <div class="player">
+            <i class="fa-solid fa-play"></i>
+        </div>
+
+        <div class="song-titles">
+            <h2>YES COCOA FT KUAMI EUGENE </h2>
+        </div>
+
+    </div>
+
+   </a>
+  </div>
+
+{% endblock %}
